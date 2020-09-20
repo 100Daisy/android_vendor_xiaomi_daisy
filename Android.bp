@@ -300,3 +300,14 @@ dex_import {
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
+android_app_import {
+	name: "FingerprintExtensionService",
+	owner: "xiaomi",
+	apk: "proprietary/vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
